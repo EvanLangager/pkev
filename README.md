@@ -1,32 +1,24 @@
-# PKEV
+# PKEV — Poker EV Modeling Toolkit
 
-Poker EV modeling toolkit built in Python.
+PKEV is a command-line tool for modeling poker decisions using structured, branch-based expected value (EV) calculations.
 
-## What it does
+It helps turn complex poker spots into clear, testable decisions.
 
-PKEV is a command-line tool for modeling poker decisions using branch-based EV logic.
+---
 
-It is designed to help study spots like:
-- required equity to call
-- call EV with realization factor
-- raise EV
-- branch comparison between fold, call, and raise
+##  What it does
 
-## Why I built it
+PKEV breaks decisions into branches and calculates EV for each option:
 
-I wanted a tool that lets me model poker decisions more clearly and build intuition for EV, realization, and decision branches.
+- Fold:  EV = 0  
+- Call:  EV based on equity and realization  
+- Raise: EV based on fold equity + post-call performance  
 
-## Current features
+This lets you compare actions directly and identify the most profitable line.
 
-- Required equity calculator
-- Call EV with realization factor
-- Raise EV modeling
-- Fold / call / raise branch comparison
+---
 
-## Tech
+##  Example
 
-- Python
-
-## Status
-
-In active development.
+```bash
+pkev model --pot 8.43 --bet 2.5 --call 2.5 --raise_to 12 --foldfreq 0.35 --eq 0.54 --rf 0.90
