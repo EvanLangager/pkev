@@ -1,0 +1,62 @@
+Formation: BB vs BTN
+Spot: SRP
+Texture: Q34r
+Action: facing 33% cbet
+Hand: Ad5h
+Decision: call
+Emotion: calm
+Mistake?: no
+Study Tag: BB defence
+
+CoinPoker Hand #356315490:  Hold'em No Limit (₮0.05/₮0.10 - Ante ₮0.01 CPCC) - 2026/01/04 2:37:05 UTC
+Table 'CPR_NL ₮10 IV' 7-max Seat #3 is the button
+Seat 1: Yungbeez (₮11.47 in chips)
+Seat 2: Jhog1212 (₮2.89 in chips)
+Seat 3: LawlessGame (₮7.18 in chips)
+Seat 4: 2waHang (₮10.09 in chips)
+Seat 5: evs20 (₮16.30 in chips)
+Seat 6: SCKook (₮12.74 in chips)
+Seat 7: calleando (₮21.88 in chips)
+2waHang: posts small blind ₮0.05
+evs20: posts big blind ₮0.10
+Yungbeez: posts the ante ₮0.01
+Jhog1212: posts the ante ₮0.01
+LawlessGame: posts the ante ₮0.01
+2waHang: posts the ante ₮0.01
+evs20: posts the ante ₮0.01
+SCKook: posts the ante ₮0.01
+calleando: posts the ante ₮0.01
+*** HOLE CARDS ***
+Dealt to evs20 [Ad 5h]
+SCKook: folds
+calleando: folds
+Yungbeez: folds
+Jhog1212: folds
+LawlessGame: raises ₮0.20 to ₮0.30
+2waHang: folds
+evs20: calls ₮0.20
+*** FLOP *** [Qd 3h 4c] {Rake: ₮0}
+evs20: checks
+LawlessGame: bets ₮0.22
+evs20: calls ₮0.22
+*** TURN *** [Qd 3h 4c] [8h] {Rake: ₮0}
+evs20: checks
+LawlessGame: checks
+*** RIVER *** [Qd 3h 4c 8h] [Kh] {Rake: ₮0}
+evs20: checks
+LawlessGame: checks
+*** SHOW DOWN ***
+evs20: shows [Ad 5h] (high card Ace)
+LawlessGame: shows [Js Jh] (a pair of Jacks)
+LawlessGame collected ₮1.10 from pot
+*** SUMMARY ***
+Total pot ₮1.16 | Rake ₮0.06
+Board [Qd 3h 4c 8h Kh]
+Seat 1: Yungbeez folded before Flop (didn't bet)
+Seat 2: Jhog1212 folded before Flop (didn't bet)
+Seat 3: LawlessGame (button) showed [Js Jh] and won (₮1.10) with a pair of Jacks
+Seat 4: 2waHang (small blind) folded before Flop
+Seat 5: evs20 (big blind) showed [Ad 5h] and lost with high card Ace
+Seat 6: SCKook folded before Flop (didn't bet)
+Seat 7: calleando folded before Flop (didn't bet)
+Hand ended at 2026/01/04 2:38:00

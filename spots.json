@@ -1,0 +1,37 @@
+{
+  "bbvbtn_952": {
+    "bet": 3.0,
+    "call": 3.0,
+    "eq": 0.45,
+    "foldfreq": 0.25,
+    "pot": 7.0,
+    "raise_to": 12.0,
+    "rf": 0.7
+  },
+  "bbvbtn_k72_76s": {
+    "bet": 3.0,
+    "call": 3.0,
+    "eq": 0.52,
+    "foldfreq": 0.35,
+    "pot": 10.0,
+    "raise_to": 12.0,
+    "rf": 0.7
+  },
+  "bbvutg_JT3_KTs": {
+    "bet": 3.6,
+    "call": 3.6,
+    "eq": 0.52,
+    "foldfreq": 0.35,
+    "pot": 4.9,
+    "raise_to": 8.5,
+    "rf": 0.7
+  },
+  "test": {
+    "bet": 3.0,
+    "call": 3.0,
+    "eq": 0.5,
+    "pot": 10.0,
+    "raise_to": 12.0,
+    "rf": 0.7
+  }
+}
