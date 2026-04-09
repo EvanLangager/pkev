@@ -18,18 +18,9 @@ This lets you compare actions directly and identify the most profitable line.
 
 ---
 
-##  Example
+PKEV™ and the PKEV logo are trademarks of Evan Langager.
 
-```bash
-pkev model --pot 8.43 --bet 2.5 --call 2.5 --raise_to 12 --foldfreq 0.35 --eq 0.54 --rf 0.90
-
-Output
-
-EV(FOLD):  0.00 chips
-EV(CALL):  4.03 chips
-EV(RAISE): 7.11 chips
-
-Best Action: RAISE
+This license does not grant permission to use the PKEV name or branding.
 
 
 
