@@ -20,7 +20,10 @@ This lets you compare actions directly and identify the most profitable line.
 
 PKEV™ and the PKEV logo are trademarks of Evan Langager.
 
-This license does not grant permission to use the PKEV name or branding.
+## License
+
+PKEV is proprietary software. Unauthorized use, copying, or distribution is prohibited.
+See the LICENSE file for details.
 
 
 
