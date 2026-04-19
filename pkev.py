@@ -7,15 +7,28 @@ from core.branches import describe_branches
 from utils.formatting import to_percent, to_chips
 from core.model import compare_actions, get_action
 from core.actions import make_raise_action
+from rich.console import Console
+from rich.theme import Theme
+pkev_theme = Theme({
+    "header": "bold cyan",
+    "text": "white",
+    "muted": "bright_black",
+    "positive": "bold green",
+    "negative": "bold red",
+    "highlight": "bold white",
+})
+
+console = Console(theme=pkev_theme)
 
 RF_PRESETS = {
     "ip": 0.90,
     "oop": 0.70,
 }
 
+
 def show_startup():
     console.print("\nPoker Math Toolkit", style="header")
-    console.print("v3.1 — Every Action Creates Branches\n", style="muted")
+    console.print("v1.3 — Every Action Creates Branches\n", style="muted")
 
     console.print("Usage:", style="highlight")
     console.print("  pkev [command] [options]\n", style="text")
@@ -138,7 +151,7 @@ def main() -> None:
 
     if args.command is None:
         show_startup()
-	raise SystemExit(0)
+        raise SystemExit(0)
 
     if args.command == "reqeq":
         validate_non_negative("Pot", args.pot)
