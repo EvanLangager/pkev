@@ -5,13 +5,33 @@ from core.ev import required_equity, raise_ev, raise_break_even_fold, raise_bran
 from core.realization import call_ev_rf
 from core.branches import describe_branches
 from utils.formatting import to_percent, to_chips
-
+from core.model import compare_actions, get_action
+from core.actions import make_raise_action
 
 RF_PRESETS = {
     "ip": 0.90,
     "oop": 0.70,
 }
 
+def show_startup():
+    console.print("\nPoker Math Toolkit", style="header")
+    console.print("v3.1 — Every Action Creates Branches\n", style="muted")
+
+    console.print("Usage:", style="highlight")
+    console.print("  pkev [command] [options]\n", style="text")
+
+    console.print("Commands:", style="highlight")
+    console.print("  reqeq      Calculate required equity for a call", style="text")
+    console.print("  callrf     EV of calling with realization factor (RF)", style="text")
+    console.print("  model      3-branch EV model (fold/call/raise)", style="text")
+    console.print("  save-spot  Save a spot for later reuse", style="text")
+    console.print("  list-spots List all saved spots", style="text")
+    console.print("  show-spot  Show one saved spot\n", style="text")
+
+    console.print("Examples:", style="highlight")
+    console.print("  pkev reqeq --pot 50 --call 15", style="text")
+    console.print("  pkev model --scan eq 0.30 0.60 0.05", style="text")
+    console.print("  pkev model --scan rf 0.50 1.00 0.05\n", style="text")
 
 def die(message: str) -> None:
     print(f"❌ {message}")
@@ -117,8 +137,8 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.command is None:
-        parser.print_help()
-        sys.exit(0)
+        show_startup()
+	raise SystemExit(0)
 
     if args.command == "reqeq":
         validate_non_negative("Pot", args.pot)
